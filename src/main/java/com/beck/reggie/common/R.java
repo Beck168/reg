@@ -3,11 +3,12 @@ package com.beck.reggie.common;
 import lombok.Builder;
 import lombok.Data;
 
+import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Map;
 
 @Data
-public class R<T> {
+public class R<T> implements Serializable {
     private Integer code;
     private String msg;
     private T data;
